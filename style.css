@@ -57,19 +57,37 @@ h3 {
     color: #333;
     margin: 0;
 }
+/* Caja que organiza las fotos una debajo de la otra */
+.galeria-vertical {
+  display: flex;
+  flex-direction: column;
+  gap: 15px; /* Separa las fotos de forma elegante */
+  margin-top: 10px;
+}
+
 .img-fluida {
   width: 10%;
   height: auto;
   border-radius: 10px;
   margin-top: 10px;
 }
+
+.img-proyecto {
+  width: 20%;
+  height: 200px; /* Altura fija para que jueguen a ser fotógrafos */
+  object-fit: cover; /* Recorta la imagen mágicamente para que no se estire feo */
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(77, 117, 75, 0.05);
+}
+
 .video-contenedor {
   position: relative;
-  padding-bottom: 56.25%; /* Relación 16:9 */
+  padding-bottom: 59.5%; 
   height: 0;
-  margin-top: 15px;
+  margin-top: 20px;
 }
+
 .video-contenedor iframe {
   position: absolute; top: 0; left: 0; width: 100%; height: 100%;
-  border-radius: 10px;
+  border-radius: 15px;
 }
